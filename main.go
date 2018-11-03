@@ -18,13 +18,17 @@ import (
 	mh "github.com/multiformats/go-multihash"
 )
 
-// IPFS bootstrap nodes. Used to find other peers in the network.
+// bootstrap nodes. Used to find other peers in the network.
+// you can use ipfs bootstrap nodes or run your own (https://github.com/BenDerPan/simple-bootstrap-node)
 var bootstrapPeers = []string{
+	//some ipfs bootstrap nodes
 	"/ip4/104.131.131.82/tcp/4001/ipfs/QmaCpDMGvV2BGHeYERUEnRQAwe3N8SzbUtfsmvsqQLuvuJ",
 	"/ip4/104.236.179.241/tcp/4001/ipfs/QmSoLPppuBtQSGwKDZT2M73ULpjvfd3aZ6ha4oFGL1KrGM",
 	"/ip4/104.236.76.40/tcp/4001/ipfs/QmSoLV4Bbm51jM9C4gDYZQ9Cy3U6aXMJDAbzgu2fzaDs64",
 	"/ip4/128.199.219.111/tcp/4001/ipfs/QmSoLSafTMBsPKadTEgaXctDQVcqN88CNLHXMkTNwMKPnu",
 	"/ip4/178.62.158.247/tcp/4001/ipfs/QmSoLer265NRgSp2LA3dPaeykiS1J6DifTC88f5uVQKNAd",
+	//my own for debug
+	//"/ip4/0.0.0.0/tcp/4001/p2p/QmP2C45o2vZfy1JXWFZDUEzrQCigMtd4r3nesvArV8dFKd",
 }
 
 var rendezvous = "meet me here"
